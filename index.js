@@ -12,9 +12,9 @@ const messages = [
   {role: "system", content: "You are a helpful Twitch Chatbot."}
 ];
 
-console.log(CHAT + GPT_MODE)
-console.log(10 + process.env.HISTORY_LENGTH)
-console.log(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 + process.env.OPENAI_API_KEY)
+console.log("GPT_MODE is " + GPT_MODE)
+console.log("History length is " + process.env.HISTORY_LENGTH)
+console.log("OpenAI API Key:" + process.env.OPENAI_API_KEY)
 
 app.use(express.json({extended: true, limit: '1mb'}))
 
